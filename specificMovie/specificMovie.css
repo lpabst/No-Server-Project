@@ -1,0 +1,29 @@
+
+.info_main_container{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    position: relative;
+    background: url('../img/epicCats.jpg')left no-repeat;
+    background-size: cover;
+    overflow: scroll;
+}
+
+.info_input_form{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 5;
+}
+
+.movie_stats{
+    width: 80%;
+    position: absolute;
+    top: 85px;
+    left: 10%;
+    background: white;
+    font-weight: bold;
+    padding: 5px 5px;
+    box-shadow: 7px 7px 8px #222;
+    line-height: 25px;
+}
+
