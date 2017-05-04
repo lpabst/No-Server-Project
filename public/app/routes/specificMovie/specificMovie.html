@@ -3,16 +3,19 @@
 <section class='info_main_container'>
 
   <div class='info_input_form'>
-    <form ng-submit="">
-      <input type='text' ng-model='' placeholder='Enter Specific Movie Name'>
-      <span><button ng-click=''>Submit</button></span>
+    <form ng-submit="showSpecificMovie(searchByName)">
+      <input type='text' ng-model='searchByName' placeholder='Get Info On A Movie'>
+      <span><button ng-click='showSpecificMovie(searchByName)'>Submit</button></span>
     </form>
   </div>
 
   <div class='movie_stats'>
-    <h4>Info On That Movie</h4>
+    <h4>{{ title }}</h4>
     <br>
-   
+    Rating: {{ rating }}<br>
+    Runtime: {{ runtime }}<br>
+    Box Office Revenue: {{ revenue }}<br>
+    Reviews: {{ reviewRating }} / 10
   </div>
 
 

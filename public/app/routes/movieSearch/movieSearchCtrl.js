@@ -27,11 +27,13 @@ $scope.searchMovie = function(movie_name){
 }
 
 
-// $scope.showSpecificMovie = function(){
-//   movieService.showSpecificMovie().then(function(response){
-    
-//   })
-// }
+$scope.showSpecificMovie = function(i){
+  var movie_name = $scope.movies[i].Title;
+  
+  movieService.showSpecificMovie(movie_name).then(function(response){
+    movieService.movie = response.data;
+  })
+}
 
 
 

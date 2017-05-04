@@ -16,7 +16,7 @@ $stateProvider
     .state('movieQuotes', {
         url: '/quotes',
         templateUrl: './app/routes/quotes/quotes.html',
-        controller: '',
+        controller: 'quotesCtrl',
     })
 
 
