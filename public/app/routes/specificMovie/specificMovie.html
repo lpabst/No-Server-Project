@@ -9,7 +9,7 @@
     </form>
   </div>
 
-  <div class='movie_stats'>
+  <div class='movie_stats' ng-show='movieHasBeenSearched'>
     <h4>{{ title }}</h4>
     <br>
     Rating: {{ rating }}<br>
@@ -17,6 +17,8 @@
     Box Office Revenue: {{ revenue }}<br>
     Reviews: {{ reviewRating }} / 10
   </div>
+
+
 
 
 </section>

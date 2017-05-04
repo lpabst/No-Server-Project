@@ -1,11 +1,26 @@
 .quotes_main_section{
     width: 100%;
-    height: cacl(100vh - 80px);
-    background: #c3c3c3;    
+    height: calc(100vh - 80px);
+    background: url('./img/jedicats.jpeg')center no-repeat;
+    background-size: cover;   
+    position: relative; 
 }
 
 .quote_box{
-    width: 40%;
-    height: 200px;
-    background: red;
+    width: 60%;
+    min-height: 20%;
+    background: rgba(100, 100, 150, 0.4);
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    font-size: 24px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 20px;
+
+    @media(min-width: 700px){
+        width: 40%;
+        left: 30%;
+    }
 }

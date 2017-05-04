@@ -14,7 +14,7 @@
     <br>
     <ul>
       <a ui-sref='specificMovie'>
-        <li ng-repeat='movie in movies | orderBy: "-Year"' ng-click='showSpecificMovie($index)'>
+        <li ng-repeat='movie in movies | orderBy: "-Year"'>
           <hr>
           {{movie.Year}}, {{ movie.Title }}
         </li>

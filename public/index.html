@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Movies Galore</title>
-  <link href="https://fonts.googleapis.com/css?family=Ranga|Timmana" rel="stylesheet">
+  <title>Movie Cats</title>
+  <link href="https://fonts.googleapis.com/css?family=Ranga|Timmana|Love+Ya+Like+A+Sister" rel="stylesheet">
   <link rel="stylesheet" href="bundle.css">
 </head>
 
@@ -14,11 +14,13 @@
 <!--Start of Body-->
 
 <header class='mobile_header' ng-controller='mainCtrl'>
-  <div class='ham' ng-click='showMobileMenu()'>
+  <div class='ham' ng-click='showMobileMenu()' ng-hide='mobileMenu'>
     <div class='line'></div>
     <div class='line'></div>
     <div class='line'></div>
   </div>
+
+  <div class='cross' ng-click='showMobileMenu()' ng-show='mobileMenu'>X</div>
 
   <section class='mobileMenu' ng-if='mobileMenu'>
     <ul class='mobile_nav'>
