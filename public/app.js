@@ -5,17 +5,17 @@ angular.module('myApp', ['ui.router'])
 $stateProvider
     .state('movieSearch', {
         url: '/',
-        templateUrl: '../movieSearch/movieSearch.html',
+        templateUrl: './app/routes/movieSearch/movieSearch.html',
         controller: 'movieSearchCtrl'
     })
     .state('specificMovie', {
         url: '/info',
-        templateUrl: '../specificMovie/specificMovie.html',
+        templateUrl: './app/routes/specificMovie/specificMovie.html',
         controller: 'specificMovieCtrl',
     })
     .state('movieQuotes', {
         url: '/quotes',
-        templateUrl: '../quotes/quotes.html',
+        templateUrl: './app/routes/quotes/quotes.html',
         controller: '',
     })
 
