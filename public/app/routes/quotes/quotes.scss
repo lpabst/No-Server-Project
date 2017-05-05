@@ -4,6 +4,7 @@
     background: url('./img/jedicats.jpeg')center no-repeat;
     background-size: cover;   
     position: relative; 
+    overflow: scroll;
 }
 
 .quote_box{
@@ -23,4 +24,11 @@
         width: 40%;
         left: 30%;
     }
+}
+
+.quotes_cr{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
 }

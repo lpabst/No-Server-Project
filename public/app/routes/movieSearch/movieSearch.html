@@ -13,13 +13,11 @@
     <h4 ng-hide='error'>Most Recent Movie(s) By That Title</h4>
     <br>
     <ul>
-      <a ui-sref='specificMovie'>
-        <li ng-repeat='movie in movies | orderBy: "-Year"'>
-          <hr>
-          {{movie.Year}}, {{ movie.Title }}
-        </li>
-      </a>
-    </ul>
+      <li highlight-dir ng-repeat='movie in movies | orderBy: "-Year"'>
+        <hr>
+        {{movie.Year}}, {{ movie.Title }}
+      </li>
+    </ul> 
   </div>
 
 

@@ -1,0 +1,71 @@
+.about_main_container{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: linear-gradient(gray, #d4fced, gray);
+    position: relative;
+    overflow: scroll;
+
+    h4{
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    p{
+        padding-top: 10px;
+        width: 90%;
+    }
+
+    li{
+        padding-top: 8px;
+    }
+}
+
+#about_heading{
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.about_info{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+
+    @media(min-width:1200px){
+        width: 50%;
+    }
+}
+
+.indented_list{
+    padding-left: 15px;
+}
+
+.about_pic{
+    width: 35%;
+    height: 60%;
+    position: absolute;
+    right: 5%;
+    top: 100px;
+    background: url('./img/headshot-devmtn.jpg') no-repeat center;
+    background-size: cover;
+    display: none;
+
+    @media(min-width: 1200px){
+        display: block;
+    }
+}
+
+#copyright{
+    width:  100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+
+    @media(min-width: 1200px){
+        text-align: right;
+    }
+}

@@ -3,9 +3,9 @@ angular.module('myApp')
 
 $scope.movieHasBeenSearched = false;
 
-$scope.showSpecificMovie = function(movie_name){
+$scope.showSpecificMovie = movie_name => {
   
-    movieService.showSpecificMovie(movie_name).then(function(response){
+    movieService.showSpecificMovie(movie_name).then(response => {
         $scope.title = response.data.Title;
         $scope.rating = response.data.Rated;
         $scope.runtime = response.data.Runtime;

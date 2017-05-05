@@ -18,6 +18,10 @@ $stateProvider
         templateUrl: './app/routes/quotes/quotes.html',
         controller: 'quotesCtrl',
     })
+    .state('about', {
+        url: '/about',
+        templateUrl: './app/routes/about/about.html',
+    })
 
 
 $urlRouterProvider.otherwise('/');
