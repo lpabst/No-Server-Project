@@ -5,6 +5,16 @@
         <br><br>
 
         <div class='about_info'>
+
+            <!--This box only shows up if someone clicks on one
+            of the technologies in the list-->
+            <div class='tech_box' ng-show='showTechBox'>
+                <h5>Info</h5>
+                <br>
+                <div class='exit_button' ng-click='exitTechBox()'>X</div>
+                <div class='tech_info'>{{ techInfo }}</div>
+            </div>
+
             <h4>Why Cats?</h4>
             <p>
             Cats are hilarious! And adorable and relatable. 
@@ -17,21 +27,21 @@
             This website uses a lot of current, in demand 
             technologies, including:
                 <ul>
-                    <li>- Fully Responsive, Mobile First Design</li>
-                    <li>- Gulp</li>
-                    <li>- SCSS</li>
-                    <li>- Babel</li>
-                    <li>- Css Animations on the Nav bar</li>
-                    <li>- HTML</li>
-                    <li>- Javascript (ES5 & ES6)</li>
-                    <li>- Angular:
-                        <ul class='indented_list'>
-                            <li>- 2 RESTful API calls</li>
-                            <li>- UI-routing with multiple views</li>
-                            <li>- Custom Angular Directive</li>
-                        </ul>
-                    </li>
+                    <li ng-click='getTech("responsive")'>- Fully Responsive, Mobile First Design</li>
+                    <li ng-click='getTech("gulp")'>- Gulp</li>
+                    <li ng-click='getTech("scss")'>- SCSS</li>
+                    <li ng-click='getTech("babel")'>- Babel</li>
+                    <li ng-click='getTech("animations")'>- Css Animations on the Nav bar</li>
+                    <li ng-click='getTech("html")'>- HTML</li>
+                    <li ng-click='getTech("js")'>- Javascript (ES5 & ES6)</li>
+                    <li ng-click='getTech("angular")'>- Angular:</li>
                 </ul>
+                <ul class='indented_list'>
+                    <li ng-click='getTech("api")'>- 2 RESTful API calls</li>
+                    <li ng-click='getTech("routing")'>- UI-routing with multiple views</li>
+                    <li ng-click='getTech("directive")'>- Custom Angular Directive</li>
+                </ul>
+                   
             </p>
 
             <h4>About Me</h4>
@@ -50,6 +60,5 @@
 
     </div>
 
-   
     
 </section>

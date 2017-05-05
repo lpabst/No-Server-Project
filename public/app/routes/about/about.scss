@@ -35,8 +35,56 @@
     position: absolute;
     left: 5%;
 
+    li{
+        cursor: pointer;
+    }
+
     @media(min-width:1200px){
         width: 50%;
+    }
+}
+
+.tech_box{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 40px;
+    top: 20%;
+    font-size: 18px;
+    background: white;
+    box-shadow: 6px 6px 10px;
+
+    @media(min-width: 700px){
+        width: 50%;
+        left: 25%;
+        top: 25%;
+    }
+
+    @media(min-width: 1200px){
+        left: 40%;
+    }
+
+    .exit_button{
+        position: absolute;
+        right: 12px;
+        top: 7px;
+        font-weight: bold;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .tech_info{
+        width: 92%;
+        position: absolute;
+        top: 50px;
+        left: 2%;
+    }
+
+    h5{
+        text-align: center;
+        text-decoration: underline;
+        padding-top: 5px;
+        font-weight: bold;
     }
 }
 

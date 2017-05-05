@@ -21,6 +21,7 @@ $stateProvider
     .state('about', {
         url: '/about',
         templateUrl: './app/routes/about/about.html',
+        controller: 'aboutCtrl',
     })
 
 
