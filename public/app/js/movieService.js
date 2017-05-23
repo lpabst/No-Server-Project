@@ -4,12 +4,12 @@ angular.module('myApp')
 
 this.searchMovie = movie_name => {
     var search = movie_name.split(' ').join('+');
-    return $http.get('http://www.omdbapi.com/?s='+search);
+    return $http.get('https://www.omdbapi.com/?s='+search);
 }
 
 this.showSpecificMovie = movie_name => {
     var search = movie_name.split(' ').join('+');
-    return $http.get('http://www.omdbapi.com/?t='+search);
+    return $http.get('https://www.omdbapi.com/?t='+search);
 }
 
 
